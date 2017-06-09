@@ -7,10 +7,12 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
   templateUrl: './app.html'
 })
 class App {
-  target: string;
-  constructor() {
-    this.target = 'world';
-  }
+todos: string[];
+name: string;
+constructor() {
+    this.name = 'Will';
+this.todos = ['Buy food', 'Save the world'];
+}
 }
 
 @NgModule({
